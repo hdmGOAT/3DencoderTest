@@ -15,9 +15,9 @@ message(STATUS "OpenCV Libraries: ${OpenCV_LIBS}")
 # Add the executable
 add_executable(OpenCVTest 
     src/main.cpp 
-    src/functions/encoder.cpp 
-    src/functions/decoder.cpp
-)
+    "src/functions/basics/encoder.cpp" 
+    "src/functions/basics/decoder.cpp"
+ "src/functions/multilayer/3Dencoder.h" "src/functions/multilayer/3Ddecoder.h" "src/functions/multilayer/3Ddecoder.cpp")
 
 
 # Link OpenCV libraries

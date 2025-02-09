@@ -1,9 +1,5 @@
 # ninja log v6
-14	1806	7607848142051004	CMakeFiles/OpenCVTest.dir/src/main.cpp.obj	731564ae68b06145
-1807	2026	7607848159986638	OpenCVTest.exe	f6b8cc01e9f081f8
-36	374	7607843333404175	CMakeFiles/OpenCVTest.dir/src/functions/decoder.cpp.obj	3b62482be3e08745
-32	1859	7607847450579312	CMakeFiles/OpenCVTest.dir/src/functions/encoder.cpp.obj	a1861e298723100d
 59	2198	7607961030621590	CMakeFiles/OpenCVTest.dir/src/main.cpp.obj	731564ae68b06145
+2220	2610	7607961052223241	OpenCVTest.exe	f6b8cc01e9f081f8
 74	2208	7607961030761941	CMakeFiles/OpenCVTest.dir/src/functions/decoder.cpp.obj	3b62482be3e08745
 65	2219	7607961030671552	CMakeFiles/OpenCVTest.dir/src/functions/encoder.cpp.obj	a1861e298723100d
-2220	2610	7607961052223241	OpenCVTest.exe	f6b8cc01e9f081f8
