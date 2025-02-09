@@ -17,7 +17,7 @@ add_executable(OpenCVTest
     src/main.cpp 
     src/functions/basics/encoder.cpp 
     src/functions/basics/decoder.cpp
-)
+ "src/functions/Bit Stack/bstack.h" "src/functions/Bit Stack/bstack.cpp")
 
 
 
