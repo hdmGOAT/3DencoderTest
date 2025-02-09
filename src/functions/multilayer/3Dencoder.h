@@ -1,8 +1,10 @@
-#ifndef ENCODER_H
-#define ENCODER_H
+#ifndef _3DENCODER_H_
+#define _3DENCODER_H_
 
 #include <string>
 
-void ThreeDEncode(const std::string& text, const std::string& outputImagePath);
+using namespace std;
 
-#endif
+void ThreeDEncode(const string& text, const string& outputImagePath, int numLayers);
+
+#endif // _3DENCODER_H_

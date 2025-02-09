@@ -15,11 +15,20 @@ message(STATUS "OpenCV Libraries: ${OpenCV_LIBS}")
 # Add the executable
 add_executable(OpenCVTest 
     src/main.cpp 
-    "src/functions/basics/encoder.cpp" 
-    "src/functions/basics/decoder.cpp"
- "src/functions/multilayer/3Dencoder.h" "src/functions/multilayer/3Ddecoder.h" "src/functions/multilayer/3Ddecoder.cpp")
+    src/functions/basics/encoder.cpp 
+    src/functions/basics/decoder.cpp
+    src/functions/multilayer/3Ddecoder.cpp
+    src/functions/multilayer/3Dencoder.cpp
+)
 
 
-# Link OpenCV libraries
-target_include_directories(OpenCVTest PRIVATE ${OpenCV_INCLUDE_DIRS})
+
+
+# Link ALL libraries
+target_include_directories(OpenCVTest PRIVATE 
+    ${OpenCV_INCLUDE_DIRS}
+    ${CMAKE_SOURCE_DIR}/src/functions
+    ${CMAKE_SOURCE_DIR}/src/functions/basics
+    ${CMAKE_SOURCE_DIR}/src/functions/multilayer
+)
 target_link_libraries(OpenCVTest PRIVATE ${OpenCV_LIBS})

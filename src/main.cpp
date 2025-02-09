@@ -1,7 +1,9 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-#include "functions/encoder.h"
-#include "functions/decoder.h"
+#include "functions/basics/encoder.h"
+#include "functions/basics/decoder.h"
+
+#include "functions/multilayer/3Dencoder.h"
 
 using namespace cv;
 using namespace std;
@@ -15,5 +17,12 @@ int main(){
 
 	cout << "Decoded text: " << decode(outputImagePath) << endl;
 
+
+	string text3D = "Hello, 3D OpenCV!";
+	string outputImagePath3D = "C:/Users/User/Desktop/testImages/3D_encoded_image.png";
+	int numLayers = 4;
+
+
+	ThreeDEncode(text3D, outputImagePath3D, numLayers);
     return 0;
 }

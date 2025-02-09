@@ -1,4 +1,4 @@
-#include "functions/multilayer/3Dencoder.h"
+#include "3Dencoder.h"
 
 #include <opencv2/opencv.hpp>
 #include <iostream>
@@ -26,7 +26,6 @@ vector<int> generatePrimes(int numLayers) {
     }
     return primes;
 }
-
 
 
 void ThreeDEncode(const string& text, const string& outputImagePath, int numLayers) {
@@ -57,5 +56,6 @@ void ThreeDEncode(const string& text, const string& outputImagePath, int numLaye
 
     imwrite(outputImagePath, image);
     cout << "Text encoded into image: " << outputImagePath << endl;
+}
 }
 
