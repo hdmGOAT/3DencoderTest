@@ -13,7 +13,7 @@ message(STATUS "OpenCV Include Directory: ${OpenCV_INCLUDE_DIRS}")
 message(STATUS "OpenCV Libraries: ${OpenCV_LIBS}")
 
 # Add the executable
-add_executable(OpenCVTest src/main.cpp "src/functions/encoder.cpp" "src/functions/decoder.cpp")
+add_executable(OpenCVTest src/main.cpp "src/functions/encoder.cpp" "src/functions/decoder.cpp"  "src/functions/encoder.h" "src/functions/decoder.h")
 
 # Link OpenCV libraries
 target_include_directories(OpenCVTest PRIVATE ${OpenCV_INCLUDE_DIRS})

@@ -1,3 +1,5 @@
+#include "encoder.h"
+
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <bitset>
@@ -6,7 +8,7 @@
 using namespace cv;
 using namespace std;
 
-void encodeTextToImage(const string& text, const string& outputImagePath) {
+void encode(const string& text, const string& outputImagePath) {
 
     string binaryData;
     for (char c : text) {
@@ -25,7 +27,6 @@ void encodeTextToImage(const string& text, const string& outputImagePath) {
             }
         }
     }
-
     imwrite(outputImagePath, image);
     cout << "Text encoded into image: " << outputImagePath << endl;
 }
