@@ -5,8 +5,7 @@
 
 
 
-void bstackEncode(std::string text, std::string outputImagePath);
+void bstackEncode(const std::string& binaryData, std::string& outputImagePath);
 
-std::string bstackDecode(std::string outputImagePath);
 
 #endif BSTACK_H
