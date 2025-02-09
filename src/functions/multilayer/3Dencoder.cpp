@@ -10,7 +10,7 @@
 using namespace cv;
 using namespace std;
 
-vector<int> generatePrimes(int numLayers) {
+vector<int> generatePrimesVector(int numLayers) {
     vector<int> primes;
     int candidate = 2;
     while (primes.size() < numLayers) {
@@ -29,7 +29,7 @@ vector<int> generatePrimes(int numLayers) {
 
 
 void ThreeDEncode(const string& text, const string& outputImagePath, int numLayers) {
-    vector<int> primes = generatePrimes(numLayers);
+    vector<int> primes = generatePrimesVector(numLayers);
 
     string binaryData;
     for (char c : text) {
