@@ -4,6 +4,7 @@
 #include "functions/basics/decoder.h"
 
 #include "functions/multilayer/3Dencoder.h"
+#include "functions/multilayer/3Ddecoder.h"
 
 using namespace cv;
 using namespace std;
@@ -24,5 +25,8 @@ int main(){
 
 
 	ThreeDEncode(text3D, outputImagePath3D, numLayers);
+
+
+	cout << "Decoded text: " << ThreeDDecode(outputImagePath3D, numLayers) << endl;
     return 0;
 }
