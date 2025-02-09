@@ -1,0 +1,3 @@
+C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build/CMakeFiles/OpenCVTest.dir
+C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build/CMakeFiles/rebuild_cache.dir

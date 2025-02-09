@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\OpenCVTest.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\OpenCVTest.dir/objects.a @CMakeFiles\OpenCVTest.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\OpenCVTest.dir/objects.a -Wl,--no-whole-archive -o OpenCVTest.exe -Wl,--out-implib,libOpenCVTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OpenCVTest.dir\linkLibs.rsp

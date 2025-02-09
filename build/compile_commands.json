@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenCVTest.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenCVTest.dir\\src\\main.cpp.obj -c \"C:\\Users\\User\\Documents\\School\\Projects\\in development\\3DencodingTest\\src\\main.cpp\"",
+  "file": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/main.cpp",
+  "output": "CMakeFiles/OpenCVTest.dir/src/main.cpp.obj"
+}
+]
