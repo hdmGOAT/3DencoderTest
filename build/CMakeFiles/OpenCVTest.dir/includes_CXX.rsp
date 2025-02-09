@@ -1,1 +1,1 @@
--isystem C:/OpenCV/opencv/build/include
+-IC:/Users/User/DOCUME~1/School/Projects/INDEVE~1/3DENCO~1/src/FUNCTI~1 -IC:/Users/User/DOCUME~1/School/Projects/INDEVE~1/3DENCO~1/src/FUNCTI~1/basics -IC:/Users/User/DOCUME~1/School/Projects/INDEVE~1/3DENCO~1/src/FUNCTI~1/MULTIL~1 -isystem C:/OpenCV/opencv/build/include

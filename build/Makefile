@@ -128,6 +128,102 @@ OpenCVTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/build
 .PHONY : OpenCVTest/fast
 
+src/functions/basics/decoder.obj: src/functions/basics/decoder.cpp.obj
+.PHONY : src/functions/basics/decoder.obj
+
+# target to build an object file
+src/functions/basics/decoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj
+.PHONY : src/functions/basics/decoder.cpp.obj
+
+src/functions/basics/decoder.i: src/functions/basics/decoder.cpp.i
+.PHONY : src/functions/basics/decoder.i
+
+# target to preprocess a source file
+src/functions/basics/decoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.i
+.PHONY : src/functions/basics/decoder.cpp.i
+
+src/functions/basics/decoder.s: src/functions/basics/decoder.cpp.s
+.PHONY : src/functions/basics/decoder.s
+
+# target to generate assembly for a file
+src/functions/basics/decoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.s
+.PHONY : src/functions/basics/decoder.cpp.s
+
+src/functions/basics/encoder.obj: src/functions/basics/encoder.cpp.obj
+.PHONY : src/functions/basics/encoder.obj
+
+# target to build an object file
+src/functions/basics/encoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj
+.PHONY : src/functions/basics/encoder.cpp.obj
+
+src/functions/basics/encoder.i: src/functions/basics/encoder.cpp.i
+.PHONY : src/functions/basics/encoder.i
+
+# target to preprocess a source file
+src/functions/basics/encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.i
+.PHONY : src/functions/basics/encoder.cpp.i
+
+src/functions/basics/encoder.s: src/functions/basics/encoder.cpp.s
+.PHONY : src/functions/basics/encoder.s
+
+# target to generate assembly for a file
+src/functions/basics/encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.s
+.PHONY : src/functions/basics/encoder.cpp.s
+
+src/functions/multilayer/3Ddecoder.obj: src/functions/multilayer/3Ddecoder.cpp.obj
+.PHONY : src/functions/multilayer/3Ddecoder.obj
+
+# target to build an object file
+src/functions/multilayer/3Ddecoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj
+.PHONY : src/functions/multilayer/3Ddecoder.cpp.obj
+
+src/functions/multilayer/3Ddecoder.i: src/functions/multilayer/3Ddecoder.cpp.i
+.PHONY : src/functions/multilayer/3Ddecoder.i
+
+# target to preprocess a source file
+src/functions/multilayer/3Ddecoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.i
+.PHONY : src/functions/multilayer/3Ddecoder.cpp.i
+
+src/functions/multilayer/3Ddecoder.s: src/functions/multilayer/3Ddecoder.cpp.s
+.PHONY : src/functions/multilayer/3Ddecoder.s
+
+# target to generate assembly for a file
+src/functions/multilayer/3Ddecoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.s
+.PHONY : src/functions/multilayer/3Ddecoder.cpp.s
+
+src/functions/multilayer/3Dencoder.obj: src/functions/multilayer/3Dencoder.cpp.obj
+.PHONY : src/functions/multilayer/3Dencoder.obj
+
+# target to build an object file
+src/functions/multilayer/3Dencoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj
+.PHONY : src/functions/multilayer/3Dencoder.cpp.obj
+
+src/functions/multilayer/3Dencoder.i: src/functions/multilayer/3Dencoder.cpp.i
+.PHONY : src/functions/multilayer/3Dencoder.i
+
+# target to preprocess a source file
+src/functions/multilayer/3Dencoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.i
+.PHONY : src/functions/multilayer/3Dencoder.cpp.i
+
+src/functions/multilayer/3Dencoder.s: src/functions/multilayer/3Dencoder.cpp.s
+.PHONY : src/functions/multilayer/3Dencoder.s
+
+# target to generate assembly for a file
+src/functions/multilayer/3Dencoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenCVTest.dir\build.make CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.s
+.PHONY : src/functions/multilayer/3Dencoder.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +257,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OpenCVTest
+	@echo ... src/functions/basics/decoder.obj
+	@echo ... src/functions/basics/decoder.i
+	@echo ... src/functions/basics/decoder.s
+	@echo ... src/functions/basics/encoder.obj
+	@echo ... src/functions/basics/encoder.i
+	@echo ... src/functions/basics/encoder.s
+	@echo ... src/functions/multilayer/3Ddecoder.obj
+	@echo ... src/functions/multilayer/3Ddecoder.i
+	@echo ... src/functions/multilayer/3Ddecoder.s
+	@echo ... src/functions/multilayer/3Dencoder.obj
+	@echo ... src/functions/multilayer/3Dencoder.i
+	@echo ... src/functions/multilayer/3Dencoder.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

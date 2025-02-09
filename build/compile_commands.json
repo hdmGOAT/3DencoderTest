@@ -4,5 +4,29 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenCVTest.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenCVTest.dir\\src\\main.cpp.obj -c \"C:\\Users\\User\\Documents\\School\\Projects\\in development\\3DencodingTest\\src\\main.cpp\"",
   "file": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/main.cpp",
   "output": "CMakeFiles/OpenCVTest.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenCVTest.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenCVTest.dir\\src\\functions\\basics\\encoder.cpp.obj -c \"C:\\Users\\User\\Documents\\School\\Projects\\in development\\3DencodingTest\\src\\functions\\basics\\encoder.cpp\"",
+  "file": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/basics/encoder.cpp",
+  "output": "CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenCVTest.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenCVTest.dir\\src\\functions\\basics\\decoder.cpp.obj -c \"C:\\Users\\User\\Documents\\School\\Projects\\in development\\3DencodingTest\\src\\functions\\basics\\decoder.cpp\"",
+  "file": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/basics/decoder.cpp",
+  "output": "CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenCVTest.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenCVTest.dir\\src\\functions\\multilayer\\3Ddecoder.cpp.obj -c \"C:\\Users\\User\\Documents\\School\\Projects\\in development\\3DencodingTest\\src\\functions\\multilayer\\3Ddecoder.cpp\"",
+  "file": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/multilayer/3Ddecoder.cpp",
+  "output": "CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenCVTest.dir/includes_CXX.rsp -g -o CMakeFiles\\OpenCVTest.dir\\src\\functions\\multilayer\\3Dencoder.cpp.obj -c \"C:\\Users\\User\\Documents\\School\\Projects\\in development\\3DencodingTest\\src\\functions\\multilayer\\3Dencoder.cpp\"",
+  "file": "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/multilayer/3Dencoder.cpp",
+  "output": "CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj"
 }
 ]

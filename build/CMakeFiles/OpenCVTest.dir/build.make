@@ -86,14 +86,82 @@ CMakeFiles/OpenCVTest.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCVTest.dir/src/main.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\main.cpp" -o CMakeFiles\OpenCVTest.dir\src\main.cpp.s
 
+CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj: CMakeFiles/OpenCVTest.dir/flags.make
+CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj: CMakeFiles/OpenCVTest.dir/includes_CXX.rsp
+CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj: C:/Users/User/Documents/School/Projects/in\ development/3DencodingTest/src/functions/basics/encoder.cpp
+CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj: CMakeFiles/OpenCVTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\School\Projects\in development\3DencodingTest\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj -MF CMakeFiles\OpenCVTest.dir\src\functions\basics\encoder.cpp.obj.d -o CMakeFiles\OpenCVTest.dir\src\functions\basics\encoder.cpp.obj -c "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics\encoder.cpp"
+
+CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics\encoder.cpp" > CMakeFiles\OpenCVTest.dir\src\functions\basics\encoder.cpp.i
+
+CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics\encoder.cpp" -o CMakeFiles\OpenCVTest.dir\src\functions\basics\encoder.cpp.s
+
+CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj: CMakeFiles/OpenCVTest.dir/flags.make
+CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj: CMakeFiles/OpenCVTest.dir/includes_CXX.rsp
+CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj: C:/Users/User/Documents/School/Projects/in\ development/3DencodingTest/src/functions/basics/decoder.cpp
+CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj: CMakeFiles/OpenCVTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\School\Projects\in development\3DencodingTest\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj -MF CMakeFiles\OpenCVTest.dir\src\functions\basics\decoder.cpp.obj.d -o CMakeFiles\OpenCVTest.dir\src\functions\basics\decoder.cpp.obj -c "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics\decoder.cpp"
+
+CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics\decoder.cpp" > CMakeFiles\OpenCVTest.dir\src\functions\basics\decoder.cpp.i
+
+CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics\decoder.cpp" -o CMakeFiles\OpenCVTest.dir\src\functions\basics\decoder.cpp.s
+
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj: CMakeFiles/OpenCVTest.dir/flags.make
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj: CMakeFiles/OpenCVTest.dir/includes_CXX.rsp
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj: C:/Users/User/Documents/School/Projects/in\ development/3DencodingTest/src/functions/multilayer/3Ddecoder.cpp
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj: CMakeFiles/OpenCVTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\School\Projects\in development\3DencodingTest\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj -MF CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Ddecoder.cpp.obj.d -o CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Ddecoder.cpp.obj -c "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\multilayer\3Ddecoder.cpp"
+
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\multilayer\3Ddecoder.cpp" > CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Ddecoder.cpp.i
+
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\multilayer\3Ddecoder.cpp" -o CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Ddecoder.cpp.s
+
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj: CMakeFiles/OpenCVTest.dir/flags.make
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj: CMakeFiles/OpenCVTest.dir/includes_CXX.rsp
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj: C:/Users/User/Documents/School/Projects/in\ development/3DencodingTest/src/functions/multilayer/3Dencoder.cpp
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj: CMakeFiles/OpenCVTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\School\Projects\in development\3DencodingTest\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj -MF CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Dencoder.cpp.obj.d -o CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Dencoder.cpp.obj -c "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\multilayer\3Dencoder.cpp"
+
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\multilayer\3Dencoder.cpp" > CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Dencoder.cpp.i
+
+CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\multilayer\3Dencoder.cpp" -o CMakeFiles\OpenCVTest.dir\src\functions\multilayer\3Dencoder.cpp.s
+
 # Object files for target OpenCVTest
 OpenCVTest_OBJECTS = \
-"CMakeFiles/OpenCVTest.dir/src/main.cpp.obj"
+"CMakeFiles/OpenCVTest.dir/src/main.cpp.obj" \
+"CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj" \
+"CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj" \
+"CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj" \
+"CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj"
 
 # External object files for target OpenCVTest
 OpenCVTest_EXTERNAL_OBJECTS =
 
 OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/src/main.cpp.obj
+OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj
+OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj
+OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj
+OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj
 OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/build.make
 OpenCVTest.exe: C:/OpenCV/opencv/build/x64/vc16/lib/opencv_world4110d.lib
 OpenCVTest.exe: C:/OpenCV/opencv/build/x64/vc16/lib/opencv_world4110d.lib
@@ -114,7 +182,7 @@ OpenCVTest.exe: C:/OpenCV/opencv/build/x64/vc16/lib/opencv_world4110d.lib
 OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/linkLibs.rsp
 OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/objects1.rsp
 OpenCVTest.exe: CMakeFiles/OpenCVTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\User\Documents\School\Projects\in development\3DencodingTest\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable OpenCVTest.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\User\Documents\School\Projects\in development\3DencodingTest\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable OpenCVTest.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenCVTest.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

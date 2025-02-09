@@ -8,6 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/basics/decoder.cpp" "CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj" "gcc" "CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj.d"
+  "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/basics/encoder.cpp" "CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj" "gcc" "CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj.d"
+  "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/multilayer/3Ddecoder.cpp" "CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj" "gcc" "CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj.d"
+  "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/functions/multilayer/3Dencoder.cpp" "CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj" "gcc" "CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj.d"
   "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/src/main.cpp" "CMakeFiles/OpenCVTest.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenCVTest.dir/src/main.cpp.obj.d"
   )
 

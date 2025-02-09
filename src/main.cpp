@@ -23,10 +23,5 @@ int main(){
 	string outputImagePath3D = "C:/Users/User/Desktop/testImages/3D_encoded_image.png";
 	int numLayers = 4;
 
-
-	ThreeDEncode(text3D, outputImagePath3D, numLayers);
-
-
-	cout << "Decoded text: " << ThreeDDecodeString(outputImagePath3D, numLayers) << endl;
     return 0;
 }

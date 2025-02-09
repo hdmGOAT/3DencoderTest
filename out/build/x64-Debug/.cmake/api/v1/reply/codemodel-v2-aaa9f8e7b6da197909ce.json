@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OpenCVTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OpenCVTest-Debug-282560834dcf4eed5dd2.json",
+					"jsonFile" : "target-OpenCVTest-Debug-991011d179866490f8f4.json",
 					"name" : "OpenCVTest",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/build",
+		"build" : "C:/Users/User/Documents/School/Projects/in development/3DencodingTest/out/build/x64-Debug",
 		"source" : "C:/Users/User/Documents/School/Projects/in development/3DencodingTest"
 	},
 	"version" : 
