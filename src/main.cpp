@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
     string text = "Hello, OpenCV!";
-    string outputImagePath = "encoded_image.png";
+    string outputImagePath = "C:/Users/User/Desktop/encoded_image.png";
 
     encode(text, outputImagePath);
 
