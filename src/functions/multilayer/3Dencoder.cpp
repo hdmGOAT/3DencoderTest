@@ -33,8 +33,9 @@ void ThreeDEncode(const string& text, const string& outputImagePath, int numLaye
 
     string binaryData;
     for (char c : text) {
-        binaryData += bitset<8>(c).to_string(); 
-
+        binaryData += bitset<8>(c).to_string();
+    }
+    
     int side = ceil(sqrt(binaryData.length() / (float)numLayers));
     Mat image = Mat::zeros(side, side, CV_8UC1); 
 
@@ -56,6 +57,6 @@ void ThreeDEncode(const string& text, const string& outputImagePath, int numLaye
 
     imwrite(outputImagePath, image);
     cout << "Text encoded into image: " << outputImagePath << endl;
-}
+
 }
 

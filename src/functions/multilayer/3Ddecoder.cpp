@@ -22,7 +22,7 @@ vector<int> factorizePrimeSum(int pixelValue, const vector<int>& primes) {
 	return layers;
 }
 
-string ThreeDDecode(const string& inputImagePath, int numLayers) {
+string ThreeDDecodeString(const string& inputImagePath, int numLayers) {
     Mat image = imread(inputImagePath, IMREAD_GRAYSCALE);
     if (image.empty()) {
         cerr << "Error: Could not open image: " << inputImagePath << endl;
@@ -48,6 +48,7 @@ string ThreeDDecode(const string& inputImagePath, int numLayers) {
         string byte = binaryData.substr(i, 8);
         decodedText += static_cast<char>(bitset<8>(byte).to_ulong());
     }
+
 
     return decodedText;
 }

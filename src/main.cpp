@@ -27,6 +27,6 @@ int main(){
 	ThreeDEncode(text3D, outputImagePath3D, numLayers);
 
 
-	cout << "Decoded text: " << ThreeDDecode(outputImagePath3D, numLayers) << endl;
+	cout << "Decoded text: " << ThreeDDecodeString(outputImagePath3D, numLayers) << endl;
     return 0;
 }

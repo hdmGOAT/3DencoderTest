@@ -1,7 +1,9 @@
-#ifndef _3DDECODER_H_
-#define _3DDECODER_H_
+#ifndef THREE_D_DECODER_H
+#define THREE_D_DECODER_H
 
 #include <string>
-string ThreeDDecode(const std::string& inputImagePath, int numLayers);
 
-#endif // !_3DDECODER_H_
+// Function declaration (must match the .cpp implementation)
+std::string ThreeDDecodeString(const std::string& inputImagePath, int numLayers);
+
+#endif // THREE_D_DECODER_H
