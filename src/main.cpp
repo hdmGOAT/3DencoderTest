@@ -1,27 +1,40 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
+#include <fstream>
+#include <bitset>
+
 #include "functions/basics/encoder.h"
 #include "functions/basics/decoder.h"
 
-#include "functions/multilayer/3Dencoder.h"
-#include "functions/multilayer/3Ddecoder.h"
-
+#include "functions/Bit-Stack/bstack.h"
 using namespace cv;
 using namespace std;
 
+
+string fileToBinary(const string& filePath) {
+	ifstream file(filePath, ios::binary);
+	if (!file) {
+		cout << "Error: File not found" << endl;
+		return;
+	}
+
+	string binaryData;
+	char byte;
+	while (file.get(byte)) {
+		binaryData += bitset<8>(byte).to_string();
+	}
+	file.close();
+	return binaryData;
+}
+
 int main(){
-    string text = "Hello, OpenCV!";
-    string outputImagePath = "C:/Users/User/Desktop/testImages/encoded_image.png";
+	string inputFilePath = "C:/Users/User/Desktop/testImages/Model.xlsx";
 
-    encode(text, outputImagePath);
+	string binaryData = fileToBinary(inputFilePath);
 
+	string outputImagePath = "C:/Users/User/Desktop/testImages/Model.png";
 
-	cout << "Decoded text: " << decode(outputImagePath) << endl;
-
-
-	string text3D = "Hello, 3D OpenCV!";
-	string outputImagePath3D = "C:/Users/User/Desktop/testImages/3D_encoded_image.png";
-	int numLayers = 4;
+	bstackEncode(binaryData, outputImagePath);
 
     return 0;
 }

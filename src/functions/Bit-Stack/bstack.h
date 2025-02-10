@@ -8,4 +8,4 @@
 void bstackEncode(const std::string& binaryData, std::string& outputImagePath);
 
 
-#endif BSTACK_H
+#endif
