@@ -11,6 +11,17 @@ struct BStackHeader {
     uint8_t bitDepth = 8;           
 };
 
+/*
+    Bit Stacking expected functionality:
+        Each first bit is in Layer 1,
+		Each second bit is in Layer 2,
+		Each third bit is in Layer 3,
+		Each fourth bit is in Layer 4,
+        ...
+
+		This allows for compressors to better view redundancy in the data.
+*/
+
 
 void bitStackEncode(const string& inputFile, const string& outputFile) {
     ifstream input(inputFile, ios::binary | ios::ate);
@@ -37,27 +48,23 @@ void bitStackEncode(const string& inputFile, const string& outputFile) {
     output.write(reinterpret_cast<char*>(&header), sizeof(header));
 
 
-    // THIS PART IS WRONG
     vector<uint8_t> bitLayers[8];  
-    bitLayers[0].resize(fileSize);
-    bitLayers[1].resize(fileSize);
-    bitLayers[2].resize(fileSize);
-    bitLayers[3].resize(fileSize);
-    bitLayers[4].resize(fileSize);
-    bitLayers[5].resize(fileSize);
-    bitLayers[6].resize(fileSize);
-    bitLayers[7].resize(fileSize);
+	for (int i = 0; i < 8; i++) {
+		bitLayers[i].resize(fileSize);
+	}
 
 
     for (size_t i = 0; i < fileSize; i++) {
         uint8_t byte = rawData[i];
         for (int bitPos = 0; bitPos < 8; bitPos++) {
-            bitLayers[bitPos][i] = (byte >> bitPos) & 1;  
+            size_t index = i / 8; 
+            uint8_t bitValue = (byte >> bitPos) & 1;
+            bitLayers[bitPos][index] |= (bitValue << (7 - (i % 8))); 
         }
     }
 
     for (int bitPos = 0; bitPos < 8; bitPos++) {
-        output.write(reinterpret_cast<char*>(bitLayers[bitPos].data()), fileSize);
+        output.write(reinterpret_cast<char*>(bitLayers[bitPos].data()), bitLayers[bitPos].size());
     }
 
     cout << "Encoded binary file " << inputFile << " into " << outputFile << " successfully!" << endl;
