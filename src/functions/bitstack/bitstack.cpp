@@ -12,7 +12,7 @@ struct BStackHeader {
 };
 
 
-void encodeBinaryToBStack(const string& inputFile, const string& outputFile) {
+void bitStackEncode(const string& inputFile, const string& outputFile) {
     ifstream input(inputFile, ios::binary | ios::ate);
     if (!input) {
         cerr << "Error: Cannot open input file: " << inputFile << endl;

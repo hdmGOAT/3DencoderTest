@@ -3,6 +3,6 @@
 
 #include <string>
 
-void encodeBinaryToBStack(const std::string& inputFile, const std::string& outputFile);
+void bitStackEncode(const std::string& inputFile, const std::string& outputFile);
 
 #endif // !BITSTACK_H
