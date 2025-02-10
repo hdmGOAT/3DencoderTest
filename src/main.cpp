@@ -6,7 +6,7 @@
 #include "functions/basics/encoder.h"
 #include "functions/basics/decoder.h"
 
-#include "functions/Bit-Stack/bstack.h"
+#include "functions/Bit-Stack/pstack.h"
 using namespace cv;
 using namespace std;
 
@@ -15,7 +15,7 @@ string fileToBinary(const string& filePath) {
 	ifstream file(filePath, ios::binary);
 	if (!file) {
 		cout << "Error: File not found" << endl;
-		return;
+		return "";
 	}
 
 	string binaryData;
@@ -28,11 +28,11 @@ string fileToBinary(const string& filePath) {
 }
 
 int main(){
-	string inputFilePath = "C:/Users/User/Desktop/testImages/Model.xlsx";
+	string inputFilePath = "C:/Users/User/Desktop/testImages/2024-11-02 08-51-04.mkv";
 
 	string binaryData = fileToBinary(inputFilePath);
 
-	string outputImagePath = "C:/Users/User/Desktop/testImages/Model.png";
+	string outputImagePath = "C:/Users/User/Desktop/testImages/";
 
 	bstackEncode(binaryData, outputImagePath);
 

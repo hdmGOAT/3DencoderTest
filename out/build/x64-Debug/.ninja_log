@@ -1,9 +1,10 @@
 # ninja log v6
-39	1930	7607987209298324	CMakeFiles/OpenCVTest.dir/src/main.cpp.obj	a3c8fba945fa5548
-1984	2239	7607987228751959	OpenCVTest.exe	8fae7b9142f79407
-33	2289	7607979074992917	CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj	9d130b611c875c06
+14	1914	7608518896162423	CMakeFiles/OpenCVTest.dir/src/main.cpp.obj	2e7698703bcaa480
+1915	2227	7608518915172442	OpenCVTest.exe	5c0be257e0166e5a
+32	2196	7608494253166167	CMakeFiles/OpenCVTest.dir/src/functions/basics/encoder.cpp.obj	99dd2c1e3a7cd1a7
 74	2208	7607961030761941	CMakeFiles/OpenCVTest.dir/src/functions/decoder.cpp.obj	3b62482be3e08745
 44	2260	7607986301098921	CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Ddecoder.cpp.obj	35ba6ebfa05150ad
 46	1983	7607987209379642	CMakeFiles/OpenCVTest.dir/src/functions/multilayer/3Dencoder.cpp.obj	290faf13725853ff
 65	2219	7607961030671552	CMakeFiles/OpenCVTest.dir/src/functions/encoder.cpp.obj	a1861e298723100d
-40	2352	7607979075063451	CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj	42a2e9916c98874a
+38	2175	7608494253226160	CMakeFiles/OpenCVTest.dir/src/functions/basics/decoder.cpp.obj	482c3e863bece2d9
+20	1852	7608518896222423	CMakeFiles/OpenCVTest.dir/src/functions/Bit-Stack/bstack.cpp.obj	1bb0cfda11bd9919
