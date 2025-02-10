@@ -3,6 +3,6 @@
 
 #include <string>
 
-void bstackEncode(const std::string& binaryData, std::string& outputImagePath);
+void bstackEncode(const std::string& binaryData, std::string& outputFile);
 
 #endif // !BITSTACK_H
