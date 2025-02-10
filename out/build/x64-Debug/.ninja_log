@@ -10,3 +10,5 @@
 20	1852	7608518896222423	CMakeFiles/OpenCVTest.dir/src/functions/Bit-Stack/bstack.cpp.obj	1bb0cfda11bd9919
 15	565	7608987455359589	CMakeFiles/OpenCVTest.dir/src/functions/bitstack/bitstack.cpp.obj	976bcee3e6e6d4f8
 40	1894	7608957271027537	CMakeFiles/OpenCVTest.dir/src/functions/pix-stack/pstack.cpp.obj	1601be2382987c63
+36	2183	7609334988689224	CMakeFiles/OpenCVTest.dir/src/main.cpp.obj	bee06998b39ded3b
+2184	2525	7609335010177764	OpenCVTest.exe	5f32e863eb88ac7

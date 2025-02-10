@@ -27,10 +27,13 @@ string fileToBinary(const string& filePath) {
 }
 
 int main(){
-	string inputFilePath = "C:\\Users\\User\\Desktop\\testImages\\tifs\\file_example_TIFF_10MB.tiff";
+
+	string fileName = "BlackMarble_2016_928m_conus.tif";
+
+	string inputFilePath = "C:\\Users\\User\\Desktop\\testImages\\tifs\\" + fileName;
 
 
-	string outputImagePath = "C:/Users/User/Desktop/testImages/output.bstack";
+	string outputImagePath = "C:/Users/User/Desktop/testImages/" + fileName;
 
 	bitStackEncode(inputFilePath, outputImagePath);
 
