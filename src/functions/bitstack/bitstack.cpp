@@ -49,9 +49,9 @@ void bitStackEncode(const string& inputFile, const string& outputFile) {
 
 
     vector<uint8_t> bitLayers[8];  
-	for (int i = 0; i < 8; i++) {
-		bitLayers[i].resize(fileSize);
-	}
+    for (int i = 0; i < 8; i++) {
+        bitLayers[i].resize((fileSize + 7) / 8, 0);
+    }
 
 
     for (size_t i = 0; i < fileSize; i++) {
