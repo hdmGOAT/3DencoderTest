@@ -27,7 +27,7 @@ string fileToBinary(const string& filePath) {
 }
 
 int main(){
-	string inputFilePath = "C:/Users/User/Desktop/testImages/basn6a16.png";
+	string inputFilePath = "C:\\Users\\User\\Desktop\\testImages\\tifs\\file_example_TIFF_10MB.tiff";
 
 
 	string outputImagePath = "C:/Users/User/Desktop/testImages/output.bstack";
