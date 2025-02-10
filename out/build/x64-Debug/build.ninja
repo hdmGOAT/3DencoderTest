@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_OpenCVTest: phony || .
 
 build CMakeFiles\OpenCVTest.dir\src\main.cpp.obj: CXX_COMPILER__OpenCVTest_unscanned_Debug C$:\Users\User\Documents\School\Projects\in$ development\3DencodingTest\src\main.cpp || cmake_object_order_depends_target_OpenCVTest
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -external:IC:\OpenCV\opencv\build\include -external:W0
+  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\bitstack" -external:IC:\OpenCV\opencv\build\include -external:W0
   OBJECT_DIR = CMakeFiles\OpenCVTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenCVTest.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\OpenCVTest.dir\
@@ -59,7 +59,7 @@ build CMakeFiles\OpenCVTest.dir\src\main.cpp.obj: CXX_COMPILER__OpenCVTest_unsca
 
 build CMakeFiles\OpenCVTest.dir\src\functions\basics\encoder.cpp.obj: CXX_COMPILER__OpenCVTest_unscanned_Debug C$:\Users\User\Documents\School\Projects\in$ development\3DencodingTest\src\functions\basics\encoder.cpp || cmake_object_order_depends_target_OpenCVTest
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -external:IC:\OpenCV\opencv\build\include -external:W0
+  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\bitstack" -external:IC:\OpenCV\opencv\build\include -external:W0
   OBJECT_DIR = CMakeFiles\OpenCVTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenCVTest.dir\src\functions\basics
   TARGET_COMPILE_PDB = CMakeFiles\OpenCVTest.dir\
@@ -67,7 +67,7 @@ build CMakeFiles\OpenCVTest.dir\src\functions\basics\encoder.cpp.obj: CXX_COMPIL
 
 build CMakeFiles\OpenCVTest.dir\src\functions\basics\decoder.cpp.obj: CXX_COMPILER__OpenCVTest_unscanned_Debug C$:\Users\User\Documents\School\Projects\in$ development\3DencodingTest\src\functions\basics\decoder.cpp || cmake_object_order_depends_target_OpenCVTest
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -external:IC:\OpenCV\opencv\build\include -external:W0
+  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\bitstack" -external:IC:\OpenCV\opencv\build\include -external:W0
   OBJECT_DIR = CMakeFiles\OpenCVTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenCVTest.dir\src\functions\basics
   TARGET_COMPILE_PDB = CMakeFiles\OpenCVTest.dir\
@@ -75,7 +75,7 @@ build CMakeFiles\OpenCVTest.dir\src\functions\basics\decoder.cpp.obj: CXX_COMPIL
 
 build CMakeFiles\OpenCVTest.dir\src\functions\pix-stack\pstack.cpp.obj: CXX_COMPILER__OpenCVTest_unscanned_Debug C$:\Users\User\Documents\School\Projects\in$ development\3DencodingTest\src\functions\pix-stack\pstack.cpp || cmake_object_order_depends_target_OpenCVTest
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -external:IC:\OpenCV\opencv\build\include -external:W0
+  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\bitstack" -external:IC:\OpenCV\opencv\build\include -external:W0
   OBJECT_DIR = CMakeFiles\OpenCVTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenCVTest.dir\src\functions\pix-stack
   TARGET_COMPILE_PDB = CMakeFiles\OpenCVTest.dir\
@@ -83,7 +83,7 @@ build CMakeFiles\OpenCVTest.dir\src\functions\pix-stack\pstack.cpp.obj: CXX_COMP
 
 build CMakeFiles\OpenCVTest.dir\src\functions\bitstack\bitstack.cpp.obj: CXX_COMPILER__OpenCVTest_unscanned_Debug C$:\Users\User\Documents\School\Projects\in$ development\3DencodingTest\src\functions\bitstack\bitstack.cpp || cmake_object_order_depends_target_OpenCVTest
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -external:IC:\OpenCV\opencv\build\include -external:W0
+  INCLUDES = -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\basics" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\pix-stack" -I"C:\Users\User\Documents\School\Projects\in development\3DencodingTest\src\functions\bitstack" -external:IC:\OpenCV\opencv\build\include -external:W0
   OBJECT_DIR = CMakeFiles\OpenCVTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenCVTest.dir\src\functions\bitstack
   TARGET_COMPILE_PDB = CMakeFiles\OpenCVTest.dir\

@@ -18,7 +18,7 @@ add_executable(OpenCVTest
     src/functions/basics/encoder.cpp 
     src/functions/basics/decoder.cpp
     src/functions/pix-stack/pstack.cpp
- "src/functions/bitstack/bitstack.h" "src/functions/bitstack/bitstack.cpp")
+    src/functions/bitstack/bitstack.cpp)
 
 
 
@@ -29,5 +29,6 @@ target_include_directories(OpenCVTest PRIVATE
     ${CMAKE_SOURCE_DIR}/src/functions
     ${CMAKE_SOURCE_DIR}/src/functions/basics
     ${CMAKE_SOURCE_DIR}/src/functions/pix-stack
+    ${CMAKE_SOURCE_DIR}/src/functions/bitstack
 )
 target_link_libraries(OpenCVTest PRIVATE ${OpenCV_LIBS})
