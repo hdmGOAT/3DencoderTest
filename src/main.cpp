@@ -3,10 +3,7 @@
 #include <fstream>
 #include <bitset>
 
-#include "functions/basics/encoder.h"
-#include "functions/basics/decoder.h"
 
-#include "functions/Bit-Stack/pstack.h"
 using namespace cv;
 using namespace std;
 
@@ -34,7 +31,7 @@ int main(){
 
 	string outputImagePath = "C:/Users/User/Desktop/testImages/";
 
-	bstackEncode(binaryData, outputImagePath);
+
 
     return 0;
 }
