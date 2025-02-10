@@ -36,6 +36,8 @@ void bitStackEncode(const string& inputFile, const string& outputFile) {
     BStackHeader header = { "BSTACK\0", fileSize, 8 };
     output.write(reinterpret_cast<char*>(&header), sizeof(header));
 
+
+    // THIS PART IS WRONG
     vector<uint8_t> bitLayers[8];  
     bitLayers[0].resize(fileSize);
     bitLayers[1].resize(fileSize);

@@ -30,7 +30,7 @@ int main(){
 	string inputFilePath = "C:/Users/User/Desktop/testImages/2024-11-02 08-51-04.mkv";
 
 
-	string outputImagePath = "C:/Users/User/Desktop/testImages/";
+	string outputImagePath = "C:/Users/User/Desktop/testImages/output.bstack";
 
 	bitStackEncode(inputFilePath, outputImagePath);
 
