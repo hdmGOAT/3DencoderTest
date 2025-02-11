@@ -80,7 +80,7 @@ void bitStackEncode(const string& inputFile, const string& outputFile, int bitDe
         for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
             size_t index = i / bitDepth;  
             uint8_t bitValue = (value >> bitPos) & 1;
-            bitLayers[bitPos][index] |= (bitValue << (7 - (i % 8)));
+			bitLayers[bitPos][index] |= (bitValue << (7 - (i % 8))); // This looks confusing, but it's just setting the bit at the correct position, for example if 1 was extracted, it would just be translated to something like 1000000 depending on which bit it is so it could also be 00100000 or others this is so when OR is used, it turns 0s into 1s and keeps 0s as 0s
         }
     }
 
