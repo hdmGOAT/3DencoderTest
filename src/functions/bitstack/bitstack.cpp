@@ -8,7 +8,7 @@ using namespace std;
 struct BStackHeader {
     char signature[8] = "BSTACK\0";  
     uint64_t originalSize;           
-    uint8_t bitDepth = 8;           
+    uint8_t bitDepth;           
 };
 
 /*
@@ -23,7 +23,7 @@ struct BStackHeader {
 */
 
 
-void bitStackEncode(const string& inputFile, const string& outputFile) {
+void bitStackEncode(const string& inputFile, const string& outputFile, int bitDepth) {
     ifstream input(inputFile, ios::binary | ios::ate);
     if (!input) {
         cerr << "Error: Cannot open input file: " << inputFile << endl;
@@ -44,28 +44,88 @@ void bitStackEncode(const string& inputFile, const string& outputFile) {
         return;
     }
 
-    BStackHeader header = { "BSTACK\0", fileSize, 8 };
+    BStackHeader header = { "BSTACK\0", fileSize, static_cast<uint8_t>(bitDepth) };
     output.write(reinterpret_cast<char*>(&header), sizeof(header));
 
 
-    vector<uint8_t> bitLayers[8];  
-    for (int i = 0; i < 8; i++) {
-        bitLayers[i].resize((fileSize + 7) / 8, 0);
+    size_t layerSize = (fileSize + (bitDepth - 1)) / bitDepth;
+
+
+    vector<vector<uint8_t>> bitLayers(bitDepth);
+    for (int i = 0; i < bitDepth; i++) {
+        bitLayers[i].resize(layerSize, 0); 
     }
 
 
-    for (size_t i = 0; i < fileSize; i++) {
-        uint8_t byte = rawData[i];
-        for (int bitPos = 0; bitPos < 8; bitPos++) {
-            size_t index = i / 8; 
-            uint8_t bitValue = (byte >> bitPos) & 1;
-            bitLayers[bitPos][index] |= (bitValue << (7 - (i % 8))); 
+
+
+    for (size_t i = 0; i < fileSize; i += (bitDepth / 8)) {  
+        uint32_t value = 0;
+
+        for (int b = 0; b < bitDepth / 8; b++) {
+            if (i + b < fileSize)
+                value |= rawData[i + b] << (8 * b);
+        }
+
+        for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
+            size_t index = i / bitDepth;  
+            uint8_t bitValue = (value >> bitPos) & 1;
+            bitLayers[bitPos][index] |= (bitValue << (7 - (i % 8)));
         }
     }
 
-    for (int bitPos = 0; bitPos < 8; bitPos++) {
+    for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
         output.write(reinterpret_cast<char*>(bitLayers[bitPos].data()), bitLayers[bitPos].size());
     }
 
+
     cout << "Encoded binary file " << inputFile << " into " << outputFile << " successfully!" << endl;
 }
+
+void bitStackDecode(const string& inputFile, const string& outputFile) {
+    ifstream input(inputFile, ios::binary);
+    if (!input) {
+        cerr << "Error: Cannot open input file: " << inputFile << endl;
+        return;
+    }
+
+    BStackHeader header;
+    input.read(reinterpret_cast<char*>(&header), sizeof(header));
+
+    if (string(header.signature) != "BSTACK\0") {
+        cerr << "Error: Invalid BSTACK file format!" << endl;
+        return;
+    }
+
+    size_t fileSize = header.originalSize;
+    int bitDepth = header.bitDepth;
+
+
+    size_t layerSize = (fileSize + (bitDepth - 1)) / bitDepth;
+    vector<vector<uint8_t>> bitLayers(bitDepth, vector<uint8_t>(layerSize));
+
+    for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
+        input.read(reinterpret_cast<char*>(bitLayers[bitPos].data()), layerSize);
+    }
+    input.close();
+
+    vector<uint8_t> reconstructedData(fileSize, 0);
+
+
+    /*
+        Reconstruction Algorithm Here
+    */
+    /*
+    ofstream output(outputFile, ios::binary);
+    if (!output) {
+        cerr << "Error: Cannot open output file: " << outputFile << endl;
+        return;
+    }
+
+    output.write(reinterpret_cast<char*>(reconstructedData.data()), fileSize);
+    output.close();
+    */
+
+    cout << "Decoded BSTACK file " << inputFile << " into " << outputFile << " successfully!" << endl;
+}
+

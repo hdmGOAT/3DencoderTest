@@ -33,9 +33,12 @@ int main(){
 	string inputFilePath = "C:\\Users\\User\\Desktop\\testImages\\tifs\\" + fileName;
 
 
-	string outputImagePath = "C:/Users/User/Desktop/testImages/" + fileName;
+	string outputImagePath = "C:/Users/User/Desktop/testImages/" + fileName +".bstack";
 
-	bitStackEncode(inputFilePath, outputImagePath);
+	bitStackEncode(inputFilePath, outputImagePath, 16);
+
+
+	bitStackDecode(outputImagePath, "C:/Users/User/Desktop/testImages/" + fileName + "_decoded.tif");
 
     return 0;
 }
