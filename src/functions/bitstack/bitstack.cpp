@@ -99,10 +99,11 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
         return;
     }
 
+    // Read the header separately
     BStackHeader header;
     input.read(reinterpret_cast<char*>(&header), sizeof(header));
 
-    if (string(header.signature) != "BSTACK\0") {
+    if (memcmp(header.signature, "BSTACK\0", 7) != 0) {
         cerr << "Error: Invalid BSTACK file format!" << endl;
         return;
     }
@@ -110,6 +111,8 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
     size_t fileSize = header.originalSize;
     int bitDepth = header.bitDepth;
 
+	cout << "Bit Depth: " << bitDepth << endl;
+	cout << "File Size: " << fileSize << endl;
 
     size_t layerSize = (fileSize + (bitDepth - 1)) / bitDepth;
     vector<vector<uint8_t>> bitLayers(bitDepth, vector<uint8_t>(layerSize));
@@ -121,11 +124,21 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
 
     vector<uint8_t> reconstructedData(fileSize, 0);
 
+    for (size_t i = 0; i < fileSize; i++) {
+        uint8_t byte = 0;
 
-    /*
-        Reconstruction Algorithm Here
-    */
-    /*
+        for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
+            size_t index = i / (bitDepth / 8);  
+            size_t bitIndex = i % (bitDepth / 8);
+
+            uint8_t bitValue = (bitLayers[bitPos][index] >> (7 - bitIndex)) & 1;
+            byte |= (bitValue << bitPos);
+        }
+
+        reconstructedData[i] = byte;
+    }
+
+    // **Write back only the reconstructed file, excluding the header**
     ofstream output(outputFile, ios::binary);
     if (!output) {
         cerr << "Error: Cannot open output file: " << outputFile << endl;
@@ -134,9 +147,8 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
 
     output.write(reinterpret_cast<char*>(reconstructedData.data()), fileSize);
     output.close();
-    
 
     cout << "Decoded BSTACK file " << inputFile << " into " << outputFile << " successfully!" << endl;
-	*/
 }
+
 
