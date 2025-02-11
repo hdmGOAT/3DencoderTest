@@ -57,8 +57,6 @@ void bitStackEncode(const string& inputFile, const string& outputFile, int bitDe
     }
 
 
-
-
     for (size_t i = 0; i < fileSize; i += (bitDepth / 8)) {  
         uint32_t value = 0;
 
@@ -66,6 +64,18 @@ void bitStackEncode(const string& inputFile, const string& outputFile, int bitDe
             if (i + b < fileSize)
                 value |= rawData[i + b] << (8 * b);
         }
+
+        /*FOR HANS TO REMEMBER:
+                
+				MSB is the first bit  aka i % 8 = 0, this means its shift is 7, and is placed at left most bit
+				LSB is the last bit  aka i % 8 = 7, this means its shift is 0, and stays at right most bit
+
+                FOR LAYERS:
+
+				Layer 1: 1st bit of each byte, LSB
+				Last Layer: Final Bit of each byte, MSB
+                    
+        */
 
         for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
             size_t index = i / bitDepth;  
@@ -124,8 +134,9 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
 
     output.write(reinterpret_cast<char*>(reconstructedData.data()), fileSize);
     output.close();
-    */
+    
 
     cout << "Decoded BSTACK file " << inputFile << " into " << outputFile << " successfully!" << endl;
+	*/
 }
 
