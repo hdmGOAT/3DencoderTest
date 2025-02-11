@@ -99,7 +99,6 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
         return;
     }
 
-    // Read the header separately
     BStackHeader header;
     input.read(reinterpret_cast<char*>(&header), sizeof(header));
 
@@ -110,9 +109,6 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
 
     size_t fileSize = header.originalSize;
     int bitDepth = header.bitDepth;
-
-	cout << "Bit Depth: " << bitDepth << endl;
-	cout << "File Size: " << fileSize << endl;
 
     size_t layerSize = (fileSize + (bitDepth - 1)) / bitDepth;
     vector<vector<uint8_t>> bitLayers(bitDepth, vector<uint8_t>(layerSize));
@@ -128,17 +124,23 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
         uint8_t byte = 0;
 
         for (int bitPos = 0; bitPos < bitDepth; bitPos++) {
-            size_t index = i / (bitDepth / 8);  
-            size_t bitIndex = i % (bitDepth / 8);
+            size_t index = i / 8; 
+            size_t bitIndex = i % 8; 
 
             uint8_t bitValue = (bitLayers[bitPos][index] >> (7 - bitIndex)) & 1;
-            byte |= (bitValue << bitPos);
+            byte |= (bitValue << bitPos); 
         }
 
         reconstructedData[i] = byte;
     }
 
-    // **Write back only the reconstructed file, excluding the header**
+
+    cout << "First 16 bytes of decoded file: ";
+    for (size_t i = 0; i < 16; i++) {
+        printf("%02X ", reconstructedData[i]);
+    }
+    cout << endl;
+
     ofstream output(outputFile, ios::binary);
     if (!output) {
         cerr << "Error: Cannot open output file: " << outputFile << endl;
@@ -150,5 +152,9 @@ void bitStackDecode(const string& inputFile, const string& outputFile) {
 
     cout << "Decoded BSTACK file " << inputFile << " into " << outputFile << " successfully!" << endl;
 }
+
+
+
+
 
 
